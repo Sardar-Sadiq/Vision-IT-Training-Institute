@@ -110,16 +110,16 @@ function Footer() {
           <ul className="space-y-3 text-sm font-sans text-on-surface/70">
             <li><Link to="/courses" className="hover:text-primary transition-colors">Python Full Stack</Link></li>
             <li><Link to="/courses" className="hover:text-primary transition-colors">Java Enterprise</Link></li>
-            <li><Link to="/courses" className="hover:text-primary transition-colors">Mentorship</Link></li>
+            <li><Link to="/courses" className="hover:text-primary transition-colors">Data Analytics & AI</Link></li>
           </ul>
         </div>
 
         <div>
           <h4 className="font-sans font-semibold text-sm mb-4">Resources</h4>
           <ul className="space-y-3 text-sm font-sans text-on-surface/70">
-            <li><Link to="#" className="hover:text-primary transition-colors">Student Portal</Link></li>
-            <li><Link to="#" className="hover:text-primary transition-colors">Success Stories</Link></li>
-            <li><Link to="#" className="hover:text-primary transition-colors">Blog</Link></li>
+            <li><Link to="/coming-soon" className="hover:text-primary transition-colors">Student Portal</Link></li>
+            <li><Link to="/coming-soon" className="hover:text-primary transition-colors">Success Stories</Link></li>
+            <li><Link to="/coming-soon" className="hover:text-primary transition-colors">Blog</Link></li>
           </ul>
         </div>
 

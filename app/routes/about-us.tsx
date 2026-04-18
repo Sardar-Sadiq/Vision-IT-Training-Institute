@@ -101,10 +101,10 @@ export default function AboutUs() {
                         <img src="/konda sir.png" alt="Julian Voss" className="absolute inset-0 w-full h-full object-cover object-top filter grayscale hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105" />
                      </div>
                      <div className="p-6 flex-1 flex flex-col">
-                        <Badge variant="legacy">LEAD ARCHITECT</Badge>
-                        <h3 className="text-xl font-display font-bold text-primary mt-4 mb-2">Julian Voss</h3>
+                        <Badge variant="legacy">Backend Engineer</Badge>
+                        <h3 className="text-xl font-display font-bold text-primary mt-4 mb-2">B. Konda</h3>
                         <p className="text-sm font-sans text-on-surface/70 leading-relaxed mb-6">
-                           Former Senior Engineer at Google, Julian specializes in distributed systems and high-concurrency Java architectures.
+                           Senior Backend Engineer at Centric Software Solutions (vendor for Capgemini), collaborating closely with management teams to deliver robust and scalable backend solutions.
                         </p>
                         <div className="flex items-center gap-3 text-on-surface/40">
                            <ShieldCheck className="w-4 h-4 cursor-pointer hover:text-primary transition-colors" />
@@ -119,10 +119,10 @@ export default function AboutUs() {
                         <img src="/mam.png" alt="Elena Rossi" className="absolute inset-0 w-full h-full object-cover object-[center_top] filter grayscale hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105" />
                      </div>
                      <div className="p-6 flex-1 flex flex-col">
-                        <Badge variant="guide">SYSTEMS DESIGN</Badge>
-                        <h3 className="text-xl font-display font-bold text-primary mt-4 mb-2">Elena Rossi</h3>
+                        <Badge variant="guide">Data Analytics & AI</Badge>
+                        <h3 className="text-xl font-display font-bold text-primary mt-4 mb-2">S. Saba Naziya</h3>
                         <p className="text-sm font-sans text-on-surface/70 leading-relaxed mb-6">
-                           A Python expert with a passion for clean code. Elena has built scalable infrastructures for series-C fintech startups.
+                           Data Analytics & AI Specialist at Centric Software Solutions (vendor for Capgemini), collaborating with management teams to deliver actionable insights and AI-powered solutions.
                         </p>
                         <div className="flex items-center gap-3 text-on-surface/40">
                            <Rocket className="w-4 h-4 cursor-pointer hover:text-primary transition-colors" />
@@ -137,10 +137,10 @@ export default function AboutUs() {
                         <img src="/Vamsi sir.png" alt="Marcus Chen" className="absolute inset-0 w-full h-full object-cover object-center filter grayscale hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105" />
                      </div>
                      <div className="p-6 flex-1 flex flex-col">
-                        <Badge variant="guide">FRONTEND LEAD</Badge>
-                        <h3 className="text-xl font-display font-bold text-primary mt-4 mb-2">Marcus Chen</h3>
+                        <Badge variant="guide">ML Engineer</Badge>
+                        <h3 className="text-xl font-display font-bold text-primary mt-4 mb-2">S. Vamsi Krishna</h3>
                         <p className="text-sm font-sans text-on-surface/70 leading-relaxed mb-6">
-                           Specializing in React and modern UI/UX principles. Marcus ensures that our technical stacks are as beautiful as they are functional.
+                           Machine Learning Engineer at Centric Software Solutions (vendor for Capgemini), collaborating with management teams to build predictive models and AI-powered applications.
                         </p>
                         <div className="flex items-center gap-3 text-on-surface/40">
                            <Play className="w-4 h-4 cursor-pointer hover:text-primary transition-colors" />
