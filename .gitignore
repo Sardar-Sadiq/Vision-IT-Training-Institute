@@ -8,3 +8,5 @@ DESIGN.md
 /.react-router/
 /build/
  
+.vercel
+.env*.local
