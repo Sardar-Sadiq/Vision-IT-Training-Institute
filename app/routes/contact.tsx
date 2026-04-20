@@ -2,11 +2,12 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Phone, MessageSquare } from "lucide-react";
 import { useLoaderData } from "react-router";
-import type { Route } from "./+types/contact";
 
 export async function loader() {
+   const accessKey = process.env.FORM_ACCESS_KEY || "";
+   console.log("Contact Loader: accessKey exists?", !!accessKey);
    return {
-      accessKey: process.env.FORM_ACCESS_KEY
+      accessKey
    };
 }
 
@@ -25,7 +26,8 @@ const GithubIcon = ({ className }: { className?: string }) => (
 
 // --- Component ---
 export default function Contact() {
-   const { accessKey } = useLoaderData<typeof loader>();
+   const data = useLoaderData() as { accessKey: string };
+   const accessKey = data?.accessKey || "";
    const [result, setResult] = useState<string>("");
    const [isSubmitting, setIsSubmitting] = useState(false);
    const [isSuccess, setIsSuccess] = useState(false);
@@ -36,25 +38,32 @@ export default function Contact() {
       setResult("Sending....");
 
       const formData = new FormData(event.target);
-      formData.append("access_key", accessKey || "");
+      formData.append("access_key", accessKey);
+      formData.append("from_name", "Vision IT Training Institute Inquiry");
+      
+      const originalSubject = formData.get("subject");
+      formData.set("subject", `New Website Inquiry: ${originalSubject}`);
 
       try {
          const response = await fetch("https://api.web3forms.com/submit", {
             method: "POST",
-            body: formData
+            body: formData,
+            headers: {
+               "Accept": "application/json",
+            }
          });
 
          const data = await response.json();
          if (data.success) {
-            setResult("Form Submitted Successfully! Our team will get back to you shortly.");
+            setResult("Form Submitted Successfully");
             setIsSuccess(true);
             event.target.reset();
          } else {
-            setResult(data.message || "Something went wrong. Please try again.");
+            setResult("Error");
             setIsSuccess(false);
          }
       } catch (error) {
-         setResult("Network error. Please try again later.");
+         setResult("Error");
          setIsSuccess(false);
       } finally {
          setIsSubmitting(false);
