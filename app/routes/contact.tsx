@@ -190,7 +190,7 @@ export default function Contact() {
                            </div>
                            <div>
                               <p className="text-[10px] uppercase tracking-widest text-slate-400 mb-1">Email</p>
-                              <p className="font-medium text-sm text-slate-900">sakevamsik@gmail.com</p>
+                              <p className="font-medium text-sm text-slate-900">visionitsupport@gmail.com</p>
                            </div>
                         </div>
                         <div className="flex items-center gap-6">
